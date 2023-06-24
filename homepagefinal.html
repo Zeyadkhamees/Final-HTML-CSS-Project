@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicology</title>
+    <style>
+        *{box-sizing: border-box;}
+         body{margin: 25px;
+            
+        }
+        .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8{
+            display: table;
+            width: 1300px;
+            height: 500px;
+            border: 5px solid rgb(46, 46, 46);
+            text-align: center;
+            background-color: rgb(46, 46, 46)
+        }
+        .navbar a {
+                     display: inline-block;
+                     color: white;
+                     text-align: center;
+                     padding: 14px 16px;
+                     text-decoration: none;
+                     position: relative; top: -18px;
+            }
+            .navbar a:hover{
+                background-color: rgb(232, 100, 28);
+            }
+            .navbar img{
+                display: inline-block;
+                text-align: left;
+                position: relative; left: -270px; top: 8px;
+                width: 120px;
+            }
+            .navbar .searchicon{
+                display: inline-block;
+                text-align: right;
+                position: relative; left: 250px; top: -13px; 
+                width: 25px;
+            }
+            .bgimg{
+                position: relative; left: 500px; top: 1px;
+                max-width: 100%;
+                height: 500px;
+                object-fit:cover;
+                float: left;
+            }
+            .bgimg2{
+                position: relative; right: -500px; top: 1px;
+                max-width: 100%;
+                height: 500px;
+                object-fit:cover;
+                float: left;
+            }
+            
+            /* .bgimg3{
+                position: relative; right: 900px; top: 1px;
+                max-width: 100%;
+                height: 500px;
+                object-fit:cover;
+                
+            } */
+           .text{
+                 display: inline-block;
+                 position: relative; right: 800px; top: 100px;
+           }
+          .row2{
+                    background-image: url(firstwebfiles/editedbg2.png);
+                    /* background-image: url(firstwebfiles/Shape-15.png); */
+                    height: 650px;
+             }
+          .row2>p{
+            display: inline-block;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            padding: 0;
+            margin: 0;
+            position: relative; top: 30px;
+          }
+
+          .firsttourpic{
+            display: inline-block;
+            border: 3px solid rgb(46, 46, 46);
+            width: 250px;
+            height: 400px;
+            position: relative; right: 170px; top: 90px;
+            background-image: url(firstwebfiles/danceimage.png);
+            
+          }
+          .secondtourpic{
+            display: inline-block;
+            border: 3px solid rgb(46, 46, 46);
+            width: 260px;
+            height: 400px;
+            position: relative;right: 0px; top: 90px;
+            background-image: url(firstwebfiles/dance4.png);
+            /* background-repeat: no-repeat; */
+            
+          }
+          .thirdtourpic{
+            display: inline-block;
+            border: 3px solid rgb(46, 46, 46);
+            width: 250px;
+            height: 400px;
+            position: relative;right: -170px; top: 90px;
+            background-image: url(firstwebfiles/danceimage.png);
+          }
+          .insidetourpic1{
+           
+            border: 3px solid rgb(46, 46, 46);
+            width: 245px;
+            height: 150px;
+            position: relative; right: 1px; top: 245px;
+            background-color: rgb(46, 46, 46);
+          }
+          .insidetourpic2{
+            border: 3px solid rgb(46, 46, 46);
+            width: 255px;
+            height: 150px;
+            position: relative; right: 0px; top: 245px;
+            background-color: rgb(46, 46, 46);
+          }
+          .insidetourpic3{
+            border: 3px solid rgb(46, 46, 46);
+            width: 245px;
+            height: 150px;
+            position: relative; right: 1px; top: 245px;
+            background-color: rgb(46, 46, 46);
+          }
+          .america{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+            position: relative; top: 5px;
+            color: white;
+            
+          }
+          .asia{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+            position: relative; top: 5px;
+            color: white;
+            
+          }
+          .australia{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+            position: relative; top: 5px;
+            color: white;
+          }
+        .row3{
+            background-image: url(firstwebfiles/bg3.png);
+            height: 650px;
+        }
+        .pricetitle{
+            display: inline-block;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            padding: 0;
+            margin: 0;
+            position: relative; top: 30px;
+          }
+          .firstpricingpic{
+            display: inline-block;
+            border: 3px solid rgb(232, 100, 28);
+            width: 250px;
+            height: 400px;
+            position: relative; right: 170px; top: 25px;
+            background-color: rgb(232, 100, 28);
+            
+            
+          }
+          .secondpricingpic{
+            display: inline-block;
+            border: 3px solid rgb(232, 100, 28);
+            width: 260px;
+            height: 400px;
+            position: relative;right: 0px; top: 25px;
+            background-color: rgb(232, 100, 28);
+            /* background-repeat: no-repeat; */
+            
+          }
+          .thirdpricingpic{
+            display: inline-block;
+            border: 3px solid rgb(232, 100, 28);
+            width: 250px;
+            height: 400px;
+            position: relative;right: -170px; top: 25px;
+            background-color: rgb(232, 100, 28);
+            
+          }
+          .insidepricingpic1{
+           
+           border: 3px solid rgb(46, 46, 46);
+           width: 200px;
+           height: 50px;
+           position: relative; right: -22px; top: 40px;
+           background-color: rgb(46, 46, 46);
+         }
+         .insidepricingpic2{
+           border: 3px solid rgb(46, 46, 46);
+           width: 200px;
+           height: 50px;
+           position: relative; right: -28px; top: 40px;
+           background-color: rgb(46, 46, 46);
+         }
+         .insidepricingpic3{
+           border: 3px solid rgb(46, 46, 46);
+           width: 200px;
+           height: 50px;
+           position: relative; right: -22px; top: 40px;
+           background-color: rgb(46, 46, 46);
+         }
+
+         .basicdiv, .profishnaldiv, .ultimatediv{
+            display: inline-block;
+            position: relative; top: 35px;
+         }
+         .firstpriceimg, .secondpriceimg, .thirdpriceimg{
+            display: inline-block;
+            position: relative; top: 40px;
+         }
+        .firsthalfpic{
+            display: inline-block;
+            border: 2px solid rgb(46, 46, 46);
+            width: 790px;
+            height: 500px;
+            position:  relative; right: -250px; top: -10px;
+            background-image: url(firstwebfiles/bg8.png);
+        }
+        .secondhalfpic{
+            display: inline-block;
+            border: 2px solid rgb(46, 46, 46);
+            width: 500px;
+            height: 500px;
+            position:  relative; right: 395px; top: -510px;
+            /* background-image: url(firstwebfiles/imgbg10.png); */
+            /* object-fit: contain;
+            background-repeat: no-repeat; */
+        }
+        .bgimg4{
+            position: relative; left: 1px; top: 1px;
+                max-width: 100%;
+                height: 500px;
+                object-fit:cover;
+                float: left;
+        }
+        .amazing{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: relative; top: 110px; right: 130px;
+        }
+        .amazingdance{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: relative; top: 85px;
+        }
+        .readmoreimg{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; top: 150px; right: 98px;
+        }
+        .row4{
+            display: inline-block;
+            height: 500px;
+            margin: 0;
+            padding: 0;
+        }
+        .secondhalfpic1{
+            display: inline-block;
+            border: 2px solid rgb(46, 46, 46);
+            width: 790px;
+            height: 500px;
+            position:  relative; left: -250px; top: -10px;
+            background-image: url(firstwebfiles/bg8.png);
+        }
+        .secondhalfpic2{
+            display: inline-block;
+            border: 2px solid rgb(46, 46, 46);
+            width: 500px;
+            height: 500px;
+            position:  relative; left: 395px; top: -510px;
+           
+        }
+        .bgimg5{
+            position: relative; left: 0px; top: 1px;
+                max-width: 100%;
+                height: 500px;
+                object-fit:cover;
+                float: left;
+        }
+        .best{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: relative; top: 110px; right: 135px;
+        }
+        .bestdance{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: relative; top: 85px;
+        }
+        .readmoreimg2{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; top: 150px; right: 98px;
+        }
+        .row5{
+            display: inline-block;
+            /* height: 500px; */
+            margin: 0;
+            padding: 0;
+            position: relative; top: -510px;
+        }
+        .row6{
+            display: inline-block;
+            /* height: 500px; */
+            margin: 0;
+            padding: 0;
+            position: relative; top: -1019px;
+            
+        }
+        .statics{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; top: 90px;
+        }
+        .number1{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: relative; right: 200px; top: 75px;
+        }
+        .firstnum{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .txtnum{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 27px;
+            position: relative; top: 7px;
+        }
+        .number2{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: relative; right: 210px; top: 75px;
+        }
+        .secondnum{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            position: relative; right: -200px; top: 1px;
+        }
+        .txtnum2{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 26px;
+            position: relative; top: 7px; right: -196px;
+        }
+        .number3{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: relative; right: 10px; top: 75px;
+        }
+        .thirdnum{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            position: relative; right: -200px; top: 1px;
+        }
+        .txtnum3{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 26px;
+            position: relative; top: 7px; right: -196px;
+        }
+        .row7{
+            display: inline-block;
+            /* height: 500px; */
+            margin: 0;
+            padding: 0;
+            position: relative; top: -1019px;
+            background-color: rgb(232, 100, 28);
+        }
+        .subscribe{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            
+            font-size: 45px;
+            font-weight: bold;
+            color: white;
+            position: relative; top: 90px; right: -400px;
+        }
+        .subparag{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            
+            font-size: 30px;
+            color: white;
+            position: relative; top: 210px; right: 100px;
+        }
+        .yourmail{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; top: 250px; right: 40px;
+        }
+        label{
+            display: table;
+            clear: both;
+            color: white;
+            position: relative; right: -350px; top: -44px;
+            font-weight: bold;
+        }
+        .sub{
+            position: relative; top: -44px; right: -263px;
+        }
+        .row8{
+            display: inline-block;
+            /* height: 500px; */
+            margin: 0;
+            padding: 0;
+            position: relative; top: -1019px;
+            background-color: rgb(46, 46, 46);
+        }
+        .leftcont{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; right: 100px; top: -98px;
+        }
+        .lasttitle{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            position: relative; right: -85px; top: 50px;
+        }
+        .lastparag{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            position: relative; top: 170px; right: 130px;
+            color: white;
+        }
+        .icons{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; right: 500px; top: 250px;
+        }
+        .middlecont{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; right: 250px; top: 150px;
+            color: white;
+        }
+
+      .footerabout{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+        .middlecont2{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; right: 150px; top: 150px;
+            color: white;
+        }
+        .footerservices{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .rightparag{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative; right: 50px; top: 100px;
+            color: white;
+        }
+        .footerother{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .loginnw{
+            position: relative; right: -245px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row1">
+        <div class="navbar" style="background-color: black;">
+            
+            <img src="firstwebfiles/musiclogo.png">
+            
+            <a href="#">HOME</a>
+            <a href="#">PRODUCT</a>
+            <a href="#">PROMO</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+            <a href="Login.html" class="loginnw"> LOGIN</a>
+            <img class="searchicon" src="firstwebfiles/Search.png">
+            
+         </div> 
+         <div>
+            <img class="bgimg" src="firstwebfiles/firstbgimgedited.png">
+            <img class="bgimg2" src="firstwebfiles/Shape-9.png">
+            <!-- <img class="bgimg3" src="firstwebfiles/Shape-8.png"> -->
+            
+        </div>
+        <div class="text">
+            <h1 class="title" style="font-size: 65px; color: white;">Musicology</h1>
+            <p style="position: relative; right: 80px; top: -5px; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LISTEN TO MUSIC EVERY DAY,<br> DANCE ALL DAY</p>
+            <br><br>
+            <a href="registeration.html">
+              <img style="border: 3px solid rgb(232, 100, 28); background-color: rgb(232, 100, 28); position: relative; right: 57px;" src="firstwebfiles/Register Now.png">
+
+            </a>
+        </div>
+          
+    </div>
+    <div class="row2">
+        <p>DANCE TOUR</p>
+        <br><br>
+        <p class="secondp" style="font-size: 20px;">
+            Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit
+        </p>
+        
+        <br>
+        <div class="firsttourpic">
+            
+            <div class="insidetourpic1">
+                <p class="america">America</p>
+                <p class="americatext" style="font-size: 17px; color: white;">Lorem ipsum dolor sit amet<br>
+                    consectetur adipiscing elit
+                </p>
+            </div>
+            
+        </div>
+        <div class="secondtourpic">
+            <div class="insidetourpic2">
+                <p class="asia">ASIA</p>
+                <p class="asiatext" style="font-size: 17px; color: white;">Lorem ipsum dolor sit amet<br>
+                    consectetur adipiscing elit
+                </p>
+            </div>
+        </div>
+        <div class="thirdtourpic">
+            <div class="insidetourpic3">
+                <p class="australia">AUSTRALIA</p>
+                <p class="asiatext" style="font-size: 17px; color: white;">Lorem ipsum dolor sit amet<br>
+                    consectetur adipiscing elit
+            </div>
+        </div>
+    </div>
+    <div class="row3">
+        <p class="pricetitle">PRICING</p>
+        <br><br>
+        <p class="thirdp" style="font-size: 23px; color: white;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </p>
+        <div class="firstpricingpic">
+            <div class="firstpriceimg">
+                <img src="firstwebfiles/Badge.png">
+            </div>
+            <div class="basicdiv">
+                <p class="basic" style="color: white; font-size: 30px; font-weight: bold;">BASIC</p>
+                <p class="basictext" style="font-size: 17px; color: white;">Lorem ipsum dolor sit amet<br>
+                    consectetur adipiscing elit
+                </p>
+            </div>
+            
+            <div class="insidepricingpic1">
+                <p style="font-size: 25px; color: white; display: inline-block; margin: 0px; padding: 0px; position: relative;top: 8px;">
+                   <a href="#" style="color: white;">$150.00</a> 
+                </p>
+                
+            </div>
+            
+        </div>
+        <div class="secondpricingpic">
+            <div class="secondpriceimg">
+                <img src="firstwebfiles/Badge.png">
+            </div>
+            <div class="profishnaldiv">
+                <p class="profishnal" style="color: white; font-size: 30px; font-weight: bold;">PROFISHNAL</p>
+                <p class="profishnaltext" style="font-size: 17px; color: white;">Lorem ipsum dolor sit amet<br>
+                    consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="insidepricingpic2">
+                <p style="font-size: 25px; color: white; display: inline-block; margin: 0px; padding: 0px; position: relative;top: 8px;">
+                   <a href="#" style="color: white;">$200.00</a>
+                </p>
+
+            </div>
+        </div>
+        <div class="thirdpricingpic">
+            <div class="thirdpriceimg">
+                <img src="firstwebfiles/Badge.png">
+            </div>
+            <div class="ultimatediv">
+                <p class="ultimate" style="color: white; font-size: 30px; font-weight: bold;">ULTIMATE</p>
+                <p class="ultimatetext" style="font-size: 17px; color: white;">Lorem ipsum dolor sit amet<br>
+                    consectetur adipiscing elit
+            </div>
+            <div class="insidepricingpic3">
+                <p style="font-size: 25px; color: white; display: inline-block; margin: 0px; padding: 0px; position: relative;top: 8px;">
+                   <a href="#" style="color: white;">$250.00</a> 
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row4">
+        <div class="firsthalfpic">
+            <p class="amazing" style="font-size: 30px; font-weight: bold;">AMAZING DANCE</p>
+            <br><br><br><br>
+            <p class="amazingdance" style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipiscing elit jdugr kjfd
+                <br>Lorem ipsum dolor sit amet consectetur adipiscing elit jdugr kjfd<br>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit jdugr kjfd
+                <br>
+                <div class="readmoreimg">
+                    <a href="#"><img src="firstwebfiles/readmoreicon.png"></a>
+                    
+                </div>
+        </div>
+        <div class="secondhalfpic">
+            <img class="bgimg4" src="firstwebfiles/firstbgimgedited.png">
+        </div>
+    </div>
+    <div class="row5">
+        <div class="secondhalfpic1">
+            <p class="best" style="font-size: 40px; font-weight: bold;">BEST DANCE</p>
+            <br><br><br><br>
+            <p class="bestdance" style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipiscing elit jdugr kjfd
+                <br>Lorem ipsum dolor sit amet consectetur adipiscing elit jdugr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                Lorem ipsum dolor sit amet consectetur jdugr kjfd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br>
+                <div class="readmoreimg2">
+                    <a href="#"><img src="firstwebfiles/readmoreicon.png"></a>
+                    
+                </div>
+        </div>
+        <div class="secondhalfpic2">
+            <img class="bgimg5" src="firstwebfiles/secondimg.png">
+        </div>
+    </div>
+    <div class="row6">
+        <div class="statics">
+            <p class="ourstatics" style="font-size: 50px; font-weight: bold; color: white; margin: 0; padding: 0;">OUR STATISTICS</p>
+            
+            <p class="statciparag" style="font-size: 20px; color: white;">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit jdugr kjfd
+                <br>
+                ipsum dolor sit amet consectetur adipiscing elit jdugr. 
+            </p>
+            <span class="number1">
+                <p class="firstnum">1240+</p>
+                <br>
+                <p class="txtnum">Club</p>
+            </span>
+            <span class="number2">
+                <p class="secondnum">2000+</p>
+                <br>
+                <p class="txtnum2">Active Member</p>
+            </span>
+            <span class="number3">
+                <p class="thirdnum">1.000+</p>
+                <br>
+                <p class="txtnum3">Community</p>
+            </span>
+        </div>
+    </div>
+    <div class="row7">
+        <p class="subscribe">SUBSCRIBE</p>
+        <p class="subparag">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit jdugr kjfd<br>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit jdugr.
+        </p>
+        <br>
+        <div class="yourmail">
+            <form action="https//www.google.com" method="post">
+                <input id="mail1" type="email" name="mail" placeholder="Your Email" style="height: 45px; width: 350px;">
+                <label for="mail1" style="border: 12px solid rgb(46, 46, 46); background-color: rgb(46, 46, 46);">SUBSCRIBE</label>
+                <input class="sub" type="submit" name="submit" value="submit">
+            </form>
+         
+        </div>
+             
+    </div>
+    <div class="row8" id="footer">
+        <div class="leftcont">
+            <p class="lasttitle">MUSICOLOGY</p>
+            <p class="lastparag">
+                Lorem ipsum dolor sit amet consectetur jdugr<br> adipiscing elit jdugr kjfd elit kjfd elit amet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                Lorem ipsum dolor sit amet consectetur &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                Lorem ipsum dolor adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <div class="icons">
+                <span class="facebook">
+                    <a href="https://www.facebook.com/">
+                        <img src="firstwebfiles/Facebook.png">
+                    </a>
+                </span>
+                <span class="whatsapp">
+                    <a href="https://www.whatsapp.com/">
+                        <img src="firstwebfiles/WhatsApp.png">
+                    </a>
+                </span>
+                <span class="Twitter">
+                    <a href="https://www.Twitter.com/">
+                        <img src="firstwebfiles/Twitter.png">
+                    </a>
+                </span>
+            </div>
+
+        </div>
+        <div class="middlecont">
+            <p class="footerabout">ABOUT</p>
+            <br><br><br>
+            <a href="#" style="color: white;">History</a>
+            <br><br>
+            <a href="#" style="color: white;">Our Team</a>
+            <br><br>
+            <a href="#" style="color: white;">Brand Guidelines</a>
+            <br><br>
+            <a href="#" style="color: white;">Terms & Conditions</a>
+            <br><br>
+            <a href="#" style="color: white;">Privacy Policy</a>
+        </div>
+         <div class="middlecont2">
+            <p class="footerservices">SERVICES</p>
+            <br><br><br>
+            <a href="#" style="color: white;">How to Order</a>
+            <br><br>
+            <a href="#" style="color: white;">Our Product</a>
+            <br><br>
+            <a href="#" style="color: white;">Order Status</a>
+            <br><br>
+            <a href="#" style="color: white;">Promo</a>
+            <br><br>
+            <a href="#" style="color: white;">Payment Method</a>
+        </div>
+        <div class="rightparag">
+            <p class="footerother">OTHER</p>
+            <br><br><br>
+            <a href="#" style="color: white;">Contact Us</a>
+            <br><br>
+            <a href="#" style="color: white;">Help</a>
+            <br><br>
+            <a href="#" style="color: white;">Privacy</a>
+            <br><br>
+            
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>

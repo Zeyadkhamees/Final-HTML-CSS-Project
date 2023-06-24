@@ -1,0 +1,120 @@
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+}
+.registercontainer{
+    background: white;
+	padding: 25px;
+	border-radius: 5px;
+	width: 400px;
+    
+}
+  .title{
+        text-align: center;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: white;
+        background:rgb(232, 100, 28);
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-top: -25px;
+        margin-left:-25px;
+        margin-right:-25px;
+  }
+  .formcontainer{
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+  .formcontainer .inputcontainer{
+    margin-bottom: 0px;
+
+  } 
+  .formcontainer .inputcontainer:last-child{
+    margin-bottom: 15px;
+  }
+
+.formcontainer .inputcontainer label{
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+.formcontainer .namecontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.formcontainer .namecontainer  input[type="text"]{
+	width: 165px;
+}
+
+.formcontainer .namecontainer input[type="text"]{
+    /* width: 160px; */
+	border-radius: 3px;
+	border: 1.3px solid gray;
+	padding: 10px;
+}
+.formcontainer ul{
+         border:1px solid rgb(115, 185, 235);
+         width:70%;
+         background: rgb(206, 238, 242);
+         margin-left: 13%;
+         padding: 8px 10px;
+         border-radius: 20px;
+         display: flex;
+         justify-content: center;
+   }
+   .formcontainer ul li{
+	margin-right: 10px;
+    list-style: none;
+}
+
+.formcontainer ul .gendercontainer{
+	position: relative;
+	margin-bottom: 0;
+}
+.formcontainer ul .gendercontainer .userinput{
+    position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+}
+.formcontainer ul .gendercontainer span{
+    display: inline-block;
+	font-size: 17px;
+	padding: 3px 15px;
+	border-radius: 15px;
+	color: #101749;
+    cursor: pointer;
+
+}
+.formcontainer .userinput:checked ~ span{
+    background: rgb(232, 100, 28);
+    color:white;
+}
+
+.formcontainer .inputcontainer .sub{
+	width: 100%;
+	background: rgb(232, 100, 28);
+	padding: 15px;
+	border: 0;
+  color:white;
+  font-size:17px;
+  font-weight: bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	cursor: pointer;
+    position: relative; top: 10px;
+}
+.formcontainer .sub:hover{
+	background: rgb(232, 100, 28);
+}
+#emaill, #country{
+    width: 392px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+ 
